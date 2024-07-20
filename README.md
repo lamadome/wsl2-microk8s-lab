@@ -10,6 +10,6 @@ This repo contains Kubernetes/Cloud native tools that will be deployed on microk
 We will be using kubectl for microk8s cluster interactions. See [Install kubectl Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) to get started.
 
 ### LoadBalancer needs:
-- MetalLB: A network LB implementation that tries to “just work” on bare metal clusters. See this[Enable MetalLB Addon](https://microk8s.io/docs/addon-metallb)
+- MetalLB: A network LB implementation that tries to “just work” on bare metal clusters. See [Enable MetalLB Addon](https://microk8s.io/docs/addon-metallb)
 
 

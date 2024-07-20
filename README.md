@@ -1,5 +1,5 @@
 # wsl2-microk8s-lab
-This repo contains Kubernetes native/Cloud native tools that will be build on microk8s running on WSL2
+This repo contains Kubernetes/Cloud native tools that will be deployed on microk8s cluster running on WSL2
 
 ### Infra Needs:
 - WSL2: wsl2 lets a windows user use a virtual linux environment on Windows Machine itself. This is pretty handy feature for quick development needs on your local machine. See [Install WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) to get started.

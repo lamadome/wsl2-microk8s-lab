@@ -22,4 +22,4 @@ helm repo add argo https://argoproj.github.io/argo-helm
 /snap/bin/microk8s helm pull argo/argo-cd
 tar -zxvf argo-cd-7.3.9.tgz
 rm -rf argo-cd-7.3.9.tgz
-``` 
+```

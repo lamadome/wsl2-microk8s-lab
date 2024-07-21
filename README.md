@@ -6,10 +6,10 @@ This repo contains Kubernetes/Cloud native tools that will be deployed on microk
 
 - Microk8s: Microk8s is a low-ops, lightweight upstream kubernetes solution. See [Install Microk8s](https://microk8s.io/docs/getting-started) to get started.
 
-### k8s Client needs:
-We will be using kubectl for microk8s cluster interactions. See [Install kubectl Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) to get started.
-
 ### LoadBalancer needs:
 - MetalLB: A network LB implementation that tries to “just work” on bare metal clusters. See [Enable MetalLB Addon](https://microk8s.io/docs/addon-metallb)
+
+### LAB STACK:
+- Declartive Delivery tool: We will use ArgoCD to deploy applications on our Microk8s Cluster see [Delivery Tool](https://github.com/iamgauravpande/wsl2-microk8s-lab/tree/main/delivery-tool#readme) for details.
 
 

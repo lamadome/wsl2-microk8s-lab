@@ -25,6 +25,6 @@ rm -rf argo-cd-7.3.9.tgz
 ```
 ### Temporary Password:
 
-Once the github action deploys argocd on microk8s cluster run below command on your machine to get admin user password and login to http://<Argo-cd-server-Load-Balancer-service-IP>:80
+Once the github action deploys argocd on microk8s cluster run below command on your machine to get admin user password and login to http://`Argo-cd-server-Load-Balancer-service-IP`:80
 
 `kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d`

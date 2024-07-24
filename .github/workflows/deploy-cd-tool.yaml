@@ -24,4 +24,4 @@ jobs:
 
     - name: Deploy ArgoCD
       run:
-       /snap/bin/microk8s helm install argocd -f 'delivery-tool/chart/argo-cd/argocd.yaml' delivery-tool/chart/argo-cd -n argocd
+       /snap/bin/microk8s helm upgrade argocd -f 'delivery-tool/chart/argo-cd/argocd.yaml' delivery-tool/chart/argo-cd -n argocd --install

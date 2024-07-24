@@ -18,7 +18,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     
-    - name: Deploy ArgoCD helm Chart 
+    - name: Create ArgoCD Namespace
       run:
        /snap/bin/microk8s kubectl create ns argocd
-       /snap/bin/microk8s helm install argocd -f delivery-tool/chart/argo-cd/argocd.yaml delivery-tool/chart/argo-cd -n argocd
+
+    - name: Deploy ArgoCD
+      run:
+       /snap/bin/microk8s helm install argocd -f 'delivery-tool/chart/argo-cd/argocd.yaml' delivery-tool/chart/argo-cd -n argocd

@@ -6,8 +6,13 @@ This will contain all the observability tools helm charts that will be deployed 
 
 - Requirement of Github Self hosted Runner: Login to your github accound and follow [Adding self hosted runner](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners?ref=goatreview.com)
 
-- Under `observability/tenants` directory run below command to Various Observability Tools helm repo and pull it: 
-
 ### Observability Tenants:
 
-- Grafana 
+- Grafana : Under `observability/tenants` directory run below command to Various Observability Tools helm repo and pull it. 
+
+```
+/snap/bin/microk8s helm repo add grafana https://grafana.github.io/helm-charts
+/snap/bin/microk8s helm pull grafana/grafana
+tar -zxvf grafana-8.3.6.tgz
+rm -rf grafana-8.3.6.tgz
+```

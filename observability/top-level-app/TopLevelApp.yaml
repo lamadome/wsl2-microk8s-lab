@@ -15,5 +15,5 @@ spec:
     targetRevision: main
     path: observability/applicationsets
   destination:
-    server: https://127.0.0.1:16443 ## microk8s control plane 
+    server: https://kubernetes.default.svc ## microk8s control plane 
     namespace: argocd

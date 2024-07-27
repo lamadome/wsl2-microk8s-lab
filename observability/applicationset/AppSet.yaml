@@ -23,8 +23,8 @@ spec:
           valueFiles:
             - '{{tenantid}}.yaml'
       destination:
-        server: '{{cluster.address}}'
-        namespace: '{{cluster.namespace}}'
+        server: '{{.cluster.address}}'
+        namespace: '{{.cluster.namespace}}'
       syncPolicy:
         syncOptions:
           - CreateNamespace=true

@@ -9,7 +9,7 @@ spec:
       repoURL: https://github.com/iamgauravpande/wsl2-microk8s-lab.git
       revision: main
       files:
-      - path: "observability/tenants-discovery/tenant/**/config.json"
+      - path: "observability/tenant-discovery/tenant/**/config.json"
   template:
     metadata:
       name: '{{tenantid}}'

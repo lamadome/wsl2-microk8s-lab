@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/iamgauravpande/wsl2-microk8s-lab.git
     targetRevision: main
-    path: observability/applicationsets
+    path: observability/applicationset
   destination:
     server: https://kubernetes.default.svc ## microk8s control plane 
     namespace: argocd

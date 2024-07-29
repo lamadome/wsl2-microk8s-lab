@@ -12,19 +12,19 @@ spec:
       - path: "observability/tenant-discovery/tenant/**/config.json"
   template:
     metadata:
-      name: '{{.tenantid}}'
+      name: '{{tenantid}}'
     spec:
       project: default
       source:
         repoURL: https://github.com/iamgauravpande/wsl2-microk8s-lab.git
         targetRevision: main
-        path: 'observability/tenants/{{path.basename}}'
+        path: 'observability/tenants/{{tenantid}}'
         helm:
           valueFiles:
-            - '{{path.basename}}.yaml'
+            - '{{tenantid}}.yaml'
       destination:
-        server: '{{.cluster.address}}'
-        namespace: '{{.cluster.namespace}}'
+        server: '{{cluster.address}}'
+        namespace: '{{cluster.namespace}}'
       syncPolicy:
         syncOptions:
           - CreateNamespace=true

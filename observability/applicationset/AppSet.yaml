@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/iamgauravpande/wsl2-microk8s-lab.git
+      repoURL: https://github.com/lamadome/wsl2-microk8s-lab.git
       revision: main
       files:
       - path: "observability/tenant-discovery/tenant/grafana/config.json"
@@ -16,7 +16,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/iamgauravpande/wsl2-microk8s-lab.git
+        repoURL: https://github.com/lamadome/wsl2-microk8s-lab.git
         targetRevision: main
         path: 'observability/tenants/grafana'
         helm:

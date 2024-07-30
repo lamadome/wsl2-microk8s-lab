@@ -7,4 +7,4 @@ metadata:
     argocd.argoproj.io/secret-type: repository
 stringData:
   type: git
-  url: https://github.com/iamgauravpande/wsl2-microk8s-lab
+  url: https://github.com/lamadome/wsl2-microk8s-lab

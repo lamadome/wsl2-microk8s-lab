@@ -7,7 +7,7 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/lamadome/wsl2-microk8s-lab.git
-      revision: main
+      revision: HEAD
       files:
       - path: "observability/tenant-discovery/tenant/**/config.json"
   template:

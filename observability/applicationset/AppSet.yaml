@@ -12,7 +12,7 @@ spec:
       - path: "observability/tenant-discovery/tenant/**/config.json"
   template:
     metadata:
-      name: grafana
+      name: '{{tenantid}}'
     spec:
       project: default
       source:
@@ -23,8 +23,8 @@ spec:
           valueFiles:
             - 'grafana.yaml'
       destination:
-        server: '{{.cluster.address}}'
-        namespace: '{{.cluster.namespace}}'
+        server: '{{cluster.address}}'
+        namespace: '{{cluster.namespace}}'
       syncPolicy:
         syncOptions:
           - CreateNamespace=true
